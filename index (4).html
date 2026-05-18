@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kitob raqamlari jadvali</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style (1).css"/>
+</head>
+<body>
+<div class="page-icon">📚</div>
+<h1>Kitob raqamlari jadvali</h1>
+  <h3>Bu web site 10 sinf tomonidan yasaldi faqatgina 10-J sinf uchun </h3>
+  <br>
+<p class="page-meta">O'quvchilarga berilgan darslik raqamlari · 27 o'quvchi · 18 ta fan</p>
+<div class="controls">
+  <div class="search-wrap">
+    <svg width="12" height="12" fill="none" viewBox="0 0 16 16"><circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <input type="text" id="search" placeholder="O'quvchi qidirish..."/>
+  </div>
+  <button class="btn" onclick="sortByName()">⇅ Ism bo'yicha</button>
+  <button class="btn" onclick="window.print()">⎙ Chop etish</button>
+  <span class="count-badge" id="count">27 ta o'quvchi</span>
+</div>
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>F.I.SH.</th><th>Ona tili</th><th>Adabiyot</th>
+        <th>Rus tili</th><th>Rus tili 2</th><th>Matematika</th><th>Geometriya</th>
+        <th>Tarix</th><th>Geografiya</th><th>Fizika</th><th>Kimyo</th>
+        <th>Tarbiya</th><th>Biologiya</th><th>Jismoniy</th><th>Harbiya</th>
+        <th>Texnologiya</th><th>Axborot</th><th>Oz. tarix</th><th>Yor. tarix</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
