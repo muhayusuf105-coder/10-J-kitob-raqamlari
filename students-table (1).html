@@ -226,6 +226,88 @@
       color: #d1d5db
     }
 
+    /* ── TELEFON (max 600px) ── */
+    @media(max-width:600px) {
+      body {
+        padding: 16px 10px
+      }
+
+      h1 {
+        font-size: 20px
+      }
+
+      .page-meta {
+        font-size: 11px
+      }
+
+      .controls {
+        gap: 6px
+      }
+
+      .search-wrap {
+        max-width: 100%;
+        flex: 1 1 100%
+      }
+
+      .btn {
+        font-size: 11px;
+        padding: 5px 8px
+      }
+
+      .count-badge {
+        font-size: 11px;
+        padding: 4px 8px
+      }
+
+      table {
+        min-width: 900px
+      }
+
+      th,
+      td {
+        font-size: 11px;
+        padding: 5px 7px
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        min-width: 130px
+      }
+    }
+
+    /* ── TABLET (601px – 1024px) ── */
+    @media(min-width:601px) and (max-width:1024px) {
+      body {
+        padding: 24px 16px
+      }
+
+      h1 {
+        font-size: 24px
+      }
+
+      table {
+        min-width: 1100px
+      }
+
+      th,
+      td {
+        font-size: 12px;
+        padding: 6px 8px
+      }
+    }
+
+    /* ── KOMPYUTER (min 1025px) ── */
+    @media(min-width:1025px) {
+      body {
+        padding: 32px 40px
+      }
+
+      table {
+        min-width: 1400px
+      }
+    }
+
+    /* ── CHOP ETISH ── */
     @media print {
       .controls {
         display: none
@@ -297,7 +379,7 @@
     const students = [
       { n: 1, name: "Abduraxmonov O", r: [39, 54, 133, 97, 93, 105, 2, null, 26, 23, 0, 50, 14, 17, 73, 105, 97, 99, 51] },
       { n: 2, name: "Bahrullayev", r: [47, 70, 95, 99, 63, 32, 68, 114, 69, 0, 116, 1, 26, 57, 112, 19, 28, 110, null] },
-      { n: 3, name: "Begimov", r: [2, 7, 71, 78, 40, 18, 109, 83, 20, 0, 105, 86, 83, 67, 124, 15, 22, 88, null] },
+      { n: 3, name: "Boginiqulov", r: [2, 7, 71, 78, 40, 18, 109, 83, 20, 0, 105, 86, 83, 67, 124, 15, 22, 88, null] },
       { n: 4, name: "Naxirqulov", r: [74, 43, 34, 10, 13, 48, 59, 112, 112, 0, 77, 58, 67, 58, 107, 12, 33, 12, null] },
       { n: 5, name: "Ibrohimov", r: [63, 69, 54, 39, 111, 4, 92, 61, 3, 0, 62, 31, 99, 5, 85, 9, 21, 58, null] },
       { n: 6, name: "Tiloberdiyeva", r: [87, 4, 60, 59, 104, 45, 19, 86, 19, 0, 100, 74, 59, 86, 109, 26, 42, 33, null] },
